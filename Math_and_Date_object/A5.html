@@ -1,0 +1,17 @@
+<!--Calculate a person's Age from their Date of Birth. (B)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let today = new Date()
+        let BirthYear = parseInt(prompt("enter Birth Year :"));
+        let currentYear = today.getFullYear() - BirthYear;
+        document.write("current year :"+currentYear);
+    </script>
+</body>
+</html>

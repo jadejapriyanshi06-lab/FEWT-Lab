@@ -1,0 +1,19 @@
+<!--Write a program which asks distance to a building and angle to top of the building and 
+calculate the height of the building (B)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let distance = parseInt(prompt("enter distance"));
+         let angle = prompt("enter angle :");
+         let radangle = angle*(Math.PI/180);
+         document.write("height = "+distance*Math.tan(radangle));
+    </script>
+   
+</body>
+</html>

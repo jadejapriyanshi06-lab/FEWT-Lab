@@ -1,0 +1,40 @@
+<!--. Calculate Total Days, Weekends, and Working Days between two dates. (B)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let startdate = new Date(prompt("enter start date : "));
+        let enddate = new Date(prompt("enter end date : "));
+
+        let Total_Days = 0;
+        let Weeekends = 0;
+        let Working_Days = 0;
+
+        let Current = new Date(startdate);
+        while(Current <= enddate){
+            Total_Days++;
+
+        let day = Current.getDay();
+
+          if (day == 0 || day == 6) {
+            Weeekends++;
+        } else {
+            Working_Days++;
+        }
+
+        Current.setDate(Current.getDate() + 1);
+    }
+
+    document.write("Total Days : " + Total_Days + "<br>");
+    document.write("Weekend Days : " + Weeekends + "<br>");
+    document.write("Working Days : " + Working_Days);
+        
+
+    </script>
+</body>
+</html>

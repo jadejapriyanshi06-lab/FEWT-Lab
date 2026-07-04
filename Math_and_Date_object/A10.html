@@ -1,0 +1,24 @@
+<!--Generate a Random Password (alpha numberical) of user-defined length using the 
+Math object. (C)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("enter password length"));
+        let char = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        let password = "";
+        for(i=0;i<n;i++){
+            index = Math.floor(Math.random()*char.length);
+            password += char.charAt(index);
+        }
+        document.write(password);
+
+        
+    </script>
+</body>
+</html>

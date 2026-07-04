@@ -1,0 +1,23 @@
+<!--Create a Live Digital Clock using Date and setInterval(). (B)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id = "Clock"></h2>
+    <script>
+        function showclock(){
+        let today = new Date();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
+        document.getElementById("Clock").innerHTML =  h + " : " + m + " : " + s;
+        }
+        showclock();
+        setInterval(showclock,1000);
+    </script>
+</body>
+</html>
