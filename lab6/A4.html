@@ -1,0 +1,31 @@
+<!--4. WAP to display products stored in array. (B)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ListSeperater(){
+            document.write("-------------------------------------------------------------------------------------<br/>");
+        }
+        
+        ItemList = [
+            {Name :'Tv',
+            image : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh2nYr6BZxkd3mDl85uanQfqlb9iEuUIQrunkWaLXvFg&s=10"},
+            {Name : 'Toster',
+            image : "https://cdn.pixabay.com/photo/2011/04/03/13/35/bread-6047_640.jpg"},
+            {Name : 'Laptop',
+            image : "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQW6crfwdv9I_UVt-Su34v49_OGG1fxudw3qMX3Yw8EW3DREKwpkZtuOvTfY-OBuVHi84Nfkx0trXyQxLPdeE8UgxCkf1NauhDSitE5mhvyGsvyCzHlr5iS"}
+        ]
+
+        for(i=0;i<ItemList.length;i++){
+            document.write("Name :"+ItemList[i].Name+"<br/>");
+            document.write("<img height = \"200px\"src = \""+ItemList[i].image+"\"><br/>");
+            ListSeperater();
+        }
+    </script>
+</body>
+</html>

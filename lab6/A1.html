@@ -1,0 +1,31 @@
+<!--1. WAP to display Faculties stored in array. (A)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        Faculties = [
+    {name : 'Prof. Arjun Bala',
+     image : "https://du-website.s3.ap-south-1.amazonaws.com/U01/Faculty-Photo/15---28-04-2023-02-07-35.jpg",
+    experience : '16 years'},
+    {name : 'Prof. Jadeja',
+    image : "https://du-website.s3.ap-south-1.amazonaws.com/U01/Faculty-Photo/6---28-04-2023-02-06-07.jpg",
+    experience : '21 years'},
+    {name : 'Prof. Mayur padiya',
+     image : "https://du-website.s3.ap-south-1.amazonaws.com/U01/Faculty-Photo/15---28-04-2023-02-07-35.jpg",
+    experience : '17 years'}
+    ]
+
+    for(i=0;i<Faculties.length;i++){
+    document.write("name : "+Faculties[i].name+"<br/>");
+    document.write("<img src = \""+Faculties[i].image+"\"/><br/>");
+    document.write("experience ="+ Faculties[i].experience+"<br/><br/>");
+    }
+    
+    </script>
+</body>
+</html>
