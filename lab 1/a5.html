@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 90vh;
+            width: 90vw;
+        }
+        .movingdiv{
+            animation-name: move;
+            height: 30%;
+            width: 30%;
+            border: 1px solid;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            margin: 30px;
+            background-color: antiquewhite;
+            animation-delay: 2s;
+            animation-timing-function: ease-in;
+        }
+        @keyframes move{
+            0%{
+                margin-top: 0%;
+                margin-left: 0%;
+            }
+            25%{
+                margin-top: 0%;
+                margin-left: 25%;
+            }
+            50%{
+                margin-top: 25%;
+                margin-left: 25%;
+            }
+            75%{
+                margin-top: 25%;
+                margin-left: 0%;
+            }
+            100%{
+                margin-top: 0%;
+                margin-left: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="movingdiv">Moving div</div>
+    </div>
+</body>
+</html>
