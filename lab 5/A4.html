@@ -1,0 +1,49 @@
+<!--4. WAP to read an array form the user and sort them using quick sort. (B)-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function Quicksort(a) {
+            if (a.length <= 1)
+                return a;
+
+            let left = [], right = [];
+            let pivot = a[a.length - 1];
+
+            for (i = 0; i < a.length-1; i++) {
+                if (a[i] < pivot) {
+                    left.push(a[i]);
+                }
+                else {
+                    right.push(a[i]);
+                }
+            }
+            let sortedleft = Quicksort(left);
+            let sortedright = Quicksort(right);
+            let mergearray = [];
+
+            for (i = 0; i < sortedleft.length; i++) {
+                mergearray.push(sortedleft[i]);
+            }
+            mergearray.push(pivot);
+
+            for (i = 0; i < sortedright.length; i++) {
+                mergearray.push(sortedright[i]);
+            }
+            return mergearray;
+        }
+        let a = [1, 6, 3, 9, 12, 54, 221];
+        let sorted_arr = Quicksort(a);
+        document.write(sorted_arr);
+    </script>
+</body>
+
+</html>
